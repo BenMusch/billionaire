@@ -7,6 +7,10 @@ verify_ssl = true
 
 [packages]
 textgenrnn = "*"
+beautifulsoup4 = "*"
+requests = "*"
+tensorflow = "*"
+tensorflow-gpu = "*"
 
 [requires]
 python_version = "3.7"
