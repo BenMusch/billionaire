@@ -14,13 +14,13 @@ URLS = [
     'https://www.brainyquote.com/authors/richard-branson-quotes',
     'https://www.brainyquote.com/authors/jack-ma-quotes',
     'https://www.brainyquote.com/authors/tim-cook-quotes',
-    'https://www.brainyquote.com/authors/j-p-morgan-quotes'
+    'https://www.brainyquote.com/authors/j-p-morgan-quotes',
     'https://www.brainyquote.com/authors/henry-ford-quotes',
     'https://www.brainyquote.com/search_results?q=entrepreneur',
-    'https://www.brainyquote.com/topics/entrepreneurship-quotes'
-    'https://www.brainyquote.com/topics/entrepreneurial-spirit-quotes'
+    'https://www.brainyquote.com/topics/entrepreneurship-quotes',
+    'https://www.brainyquote.com/topics/entrepreneurial-spirit-quotes',
     'https://www.brainyquote.com/search_results?q=billionaire',
-    'https://www.brainyquote.com/search_results?q=wealthy'
+    'https://www.brainyquote.com/search_results?q=wealthy',
     'https://www.brainyquote.com/search_results?q=business'
 ]
 SLEEP_SECONDS = 3
