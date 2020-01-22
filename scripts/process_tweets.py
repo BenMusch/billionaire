@@ -8,7 +8,7 @@ USERNAME = sys.argv[1]
 
 def should_process(tweet):
     if tweet['is_reply_to']: return False
-    if tweet['username'] != USERNAME: return False
+    if tweet['screen_name'] != USERNAME: return False
 
     return True
 
