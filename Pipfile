@@ -10,7 +10,8 @@ textgenrnn = "*"
 beautifulsoup4 = "*"
 requests = "*"
 tensorflow = "*"
-tensorflow-gpu = "*"
+python-lambda = "*"
+tweepy = "*"
 
 [requires]
 python_version = "3.7"
