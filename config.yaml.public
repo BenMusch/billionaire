@@ -1,0 +1,41 @@
+region: us-east-1
+
+function_name: today_salesman_tweet
+handler: twitter.do_tweet
+description: TodaySalesman twitter bot
+runtime: python3.6
+# role: lambda_basic_execution
+
+# S3 upload requires appropriate role with s3:PutObject permission
+# (ex. basic_s3_upload), a destination bucket, and the key prefix
+# bucket_name: 'example-bucket'
+# s3_key_prefix: 'path/to/file/'
+
+# if access key and secret are left blank, boto will use the credentials
+# defined in the [default] section of ~/.aws/credentials.
+aws_access_key_id: ${AWS_PERSONAL_ACCESS_KEY_ID}
+aws_secret_access_key: ${AWS_PERSONAL_SECRET_ACCESS_KEY}
+
+# dist_directory: dist
+# timeout: 15
+# memory_size: 512
+# concurrency: 500
+#
+
+# Experimental Environment variables
+environment_variables:
+    CONSUMER_API_KEY: ${CONSUMER_API_KEY}
+    CONSUMER_API_SECRET: ${CONSUMER_API_SECRET}
+    ACCESS_TOKEN: ${ACCESS_TOKEN}
+    ACCESS_TOKEN_SECRET: ${ACCESS_TOKEN_SECRET}
+
+# If `tags` is uncommented then tags will be set at creation or update
+# time.  During an update all other tags will be removed except the tags
+# listed here.
+#tags:
+#    tag_1: foo
+#    tag_2: bar
+
+# Build options
+build:
+  source_directories: lib # a comma delimited list of directories in your project root that contains source to package.

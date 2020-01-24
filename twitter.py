@@ -36,7 +36,7 @@ def get_tweet_text():
     while len(text) > 280: text = gen_tweet()
     return text
 
-def do_tweet():
+def do_tweet(*args):
     text = get_tweet_text()
     logging.info('trying to tweet "%s" (len %s)' % (text, len(text)))
     api.update_with_media('img/' + random.choice(os.listdir('img/')), status=text)
