@@ -39,7 +39,7 @@ def get_tweet_text():
 def do_tweet():
     text = get_tweet_text()
     logging.info('trying to tweet "%s" (len %s)' % (text, len(text)))
-    api.update_status(status=text)
+    api.update_with_media('img/' + random.choice(os.listdir('img/')), status=text)
 
 if __name__ == '__main__':
     do_tweet()
